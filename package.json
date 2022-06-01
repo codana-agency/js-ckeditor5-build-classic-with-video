@@ -45,7 +45,8 @@
     "@ckeditor/ckeditor5-paste-from-office": "^29.1.0",
     "@ckeditor/ckeditor5-table": "^29.1.0",
     "@ckeditor/ckeditor5-typing": "^29.1.0",
-    "@visao/ckeditor5-video": "git+https://github.com/codana-agency/ckeditor5-video.git"
+    "@visao/ckeditor5-video": "git+https://github.com/codana-agency/ckeditor5-video.git",
+    "@webspellchecker/wproofreader-ckeditor5": "^2.1.0"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-alignment": "^29.1.0",

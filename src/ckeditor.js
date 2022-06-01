@@ -38,6 +38,7 @@ import Video from "@visao/ckeditor5-video/src/video.js";
 import VideoResize from "@visao/ckeditor5-video/src/videoresize.js";
 import VideoToolbar from "@visao/ckeditor5-video/src/videotoolbar.js";
 import VideoStyle from "@visao/ckeditor5-video/src/videostyle.js";
+import WProofreader from "@webspellchecker/wproofreader-ckeditor5/src/wproofreader";
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -73,6 +74,7 @@ ClassicEditor.builtinPlugins = [
   VideoUpload,
   VideoResize,
   VideoStyle,
+  WProofreader,
 ];
 
 // Editor configuration.
@@ -98,6 +100,7 @@ ClassicEditor.defaultConfig = {
       "mediaEmbed",
       "undo",
       "redo",
+      "wproofreader",
     ],
   },
   image: {
@@ -153,4 +156,9 @@ ClassicEditor.defaultConfig = {
   },
   // This value must be kept in sync with the language defined in webpack.config.js.
   language: "en",
+  wproofreader: {
+    serviceId: "BhWhjF5q69Hc7ye",
+    srcUrl:
+      "https://svc.webspellchecker.net/spellcheck31/wscbundle/wscbundle.js",
+  },
 };
